@@ -7,8 +7,6 @@ const DEVEL = 6;
 const BONUS = 2;
 const MONEY = 4200;
 
-
-
 var icon_delay = 5;
 var _rows = 0;
 
@@ -237,23 +235,4 @@ MyBlock.style.textAlign = 'left';
 //MyBlock.style.borderLeft = '20px solid white';
 //MyBlock.style.padding = '120px 10px';
 MyBlock.style.color = '#8b8e91';
-//стили отдельным файлом----------------
-/*
-var css = document.createElement("LINK");
-css.rel = "StyleSheet";
-css.href = "/style/style.css";
-css.type = "text/css";
-document.getElementsByTagName("HEAD")[0].appendChild(css);
-*/
-/*
-//рабочий вариант вывода
-var MyBlock = document.createElement('div');
-var output = '';
-if (count_delay){output = '<p>'+icon_delay+'Выдержка('+ count_delay +'):   '+ sum_delay + '</p>'}
-if (count_accept){output += '<p>Приёмка('+count_accept+'):   '+ sum_accept +'</p>'}
-if (count_work){output += '<p>В работе('+count_work+'):   '+ sum_work +'</p>'}
-if (count_test){output += '<p>Тест('+count_test+'):   '+ sum_test +'</p>'}
-if (count_trank){output += '<p>В транк('+count_trank+'):  '+ sum_trank +'</p>'}
-if (count_pause){output += '<p>На паузе('+count_pause+'):  '+ sum_pause +'</p>'}
-MyBlock.innerHTML = output+ '<p><strong>Всего('+ count_total +'):   '+ sum_total +'</strong></p>';
-*/
+
