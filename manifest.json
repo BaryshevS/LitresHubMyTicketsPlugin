@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "LitrExt",
+    "version" : "1.3.0",
+    "background_page" : "background.html", 
+    "content_scripts" : [
+        {
+            "js":[ "hub.user.js" ], 
+            "matches":[ "https://hub.litres.ru/pages/ticket_search/*" ], 
+            "run_at":"document_end"  
+        }
+    ], 
+    "description" : "",  
+    "permissions" : [ "http://hub.litres.ru/*", "unlimitedStorage"],
+    "icons": {
+        "128": "/icon128.png"},
+    "browser_action": {
+            "default_title": "LitresEx", // Заголовок. Его видно если навести курсор на иконку в браузере
+            "default_icon": "icon128.png", // Путь к иконке расширения
+            "default_popup": "popup.html" // Путь к странице с попапом
+    }
+}
