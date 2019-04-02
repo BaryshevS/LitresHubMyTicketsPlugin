@@ -2,15 +2,17 @@
     "manifest_version": 2,
     "name": "LitrExt",
     "version" : "1.3.0",
-    "background_page" : "background.html", 
+    "background": { 
+        "page": "background.html"
+    },
     "content_scripts" : [
         {
-            "js":[ "hub.user.js" ], 
-            "matches":[ "https://hub.litres.ru/pages/ticket_search/*" ], 
-            "run_at":"document_end"  
+            "js":["hub.user.js"],
+            "matches":["https://hub.litres.ru/pages/ticket_search/*"],
+            "run_at":"document_end"
         }
     ], 
-    "description" : "",  
+    "description" : "",
     "permissions" : [ "http://hub.litres.ru/*", "unlimitedStorage"],
     "icons": {
         "128": "/icon128.png"},
